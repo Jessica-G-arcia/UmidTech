@@ -71,8 +71,6 @@ h2 {
   font-weight: 30;
 }
 
-
-
 .info_produto {
   position: relative;
   margin-top: 50px;
@@ -310,6 +308,99 @@ button.botao__1:active {
   }
 }
 
-.contato{
+/* Corpo da página contato */
+.Contato{
   background-color: white;
+  color: #333;
+}
+
+/* Titulo da página (h1) */
+.Titulo_contato{
+  text-align: center;
+}
+
+/* Container que organiza o conteúdo da página de contato */
+.Container_contato{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px auto; 
+  max-width: 1200px;
+}
+
+/* Conteúdo da página de contato */
+.Conteudo_contato{
+  text-align: left;
+  max-width: 600px;
+  padding: 0;
+  margin-right: 20px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Imagens das redes sociais */
+.Img_redesocial_contato{
+  width: 15px;
+}
+
+/* Estiliza o que estiver dentro do section */
+.Contato_section{
+  flex: 1;
+  padding: 0;
+}
+
+/* Estiliza o titulo (h2) do formulário */
+.Titulo_msg_contato{
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+/* Estiliza o formulário */
+.Forms_contato{
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+  display: block;
+  padding-left: 20px;
+}
+
+/* Estilo dos inputs dentro do formulário */
+.Contato_input{
+  margin-bottom: 15px;
+}
+
+/* Estilo dos label da página */
+.Label_contato{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Estilo para campos de entrada e textarea */
+.Contato_input input[type="text"],
+.Contato_input input[type="email"],
+.Contato_input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Estilo específico para textarea */
+.Contato_input textarea{
+  resize: none;
+}
+
+/* Estiliza os input e os textarea, muda quando o usuario clica neles */
+.Contato_input input:focus,
+.Contato_input textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
