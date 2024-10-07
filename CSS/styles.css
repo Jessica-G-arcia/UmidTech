@@ -307,3 +307,7 @@ button.botao__1:active {
     transform: translateY(-0.1em);
   }
 }
+
+.contato{
+  background-color: white;
+}
