@@ -192,7 +192,7 @@ footer {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.337);
   backface-visibility: hidden;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
 }
 
@@ -202,7 +202,7 @@ footer {
 }
 
 .frente_2 {
-  background-image: url(../img/cópia\ de\ eficiencia.png);
+  background-image: url(../img/eficiencia.png);
   background-size: cover;
 }
 
@@ -235,20 +235,18 @@ footer {
 .frente_3,
 .frente_4 h4 {
   font-size: 20px;
-  color: black;
+  color: #023047;
 }
 
 .espelho {
   width: 80%;
   max-width: 500px;
-  height: 30%;
   background-color: rgba(255, 255, 255, 0.338);
   border: 1px solid white;
   box-shadow: 0px 0px 5px white;
   border-radius: 10px;
   backdrop-filter: blur(5px);
   text-align: center;
-  padding-top: 10px;
 }
 
 .tras p {
