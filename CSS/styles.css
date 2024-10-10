@@ -308,7 +308,7 @@ button.botao__1:active {
 
 /* Corpo da página contato */
 .Contato{
-   font-family: 'Inter', sans-serif; 
+  font-family: 'Inter', sans-serif; 
   background-color: white;
   color: #333;
 }
@@ -316,6 +316,7 @@ button.botao__1:active {
 /* Titulo da página (h1) */
 .Titulo_contato{
   text-align: center;
+  padding: 10px;
 }
 
 /* Container que organiza o conteúdo da página de contato */
@@ -325,6 +326,7 @@ button.botao__1:active {
   align-items: flex-start;
   margin: 20px auto; 
   max-width: 1200px;
+  padding: 80px;
 }
 
 /* Conteúdo da página de contato */
@@ -362,7 +364,7 @@ button.botao__1:active {
   padding: 11px;
   border-radius: 8px;
   max-width: 600px;
-  width: 100%;
+  width: 93%;
   margin: 0;
   display: block;
   padding-left: 20px;
@@ -422,4 +424,24 @@ button.botao__1:active {
 
 .Botao_enviar:hover{
   background-color: #0056b3;
+}
+
+/* Responsividade apenas para o CONTEUDO da página de Contato */
+@media (max-width: 768px){
+  body.Contato{
+    overflow-x: hidden;
+  }
+
+  .Contato .Container_contato{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contato .Conteudo_contato{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
