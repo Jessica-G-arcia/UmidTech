@@ -328,50 +328,14 @@ button.botao__1:active {
   margin: 3px;
 }
 
-/* Estiliza a barra de pesquisa */
-.pesquisaFaq {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Adiciona sombra sutil */
-  border-radius: 25px;
-  padding: 5px 15px;
-  width: 400px;
-  margin-bottom: 20px
-}
-
-/* Estiliza o campo (input) da área de pesquisa */
-.pesquisaFaq input {
-  border: none;
-  outline: none;
-  background: none;
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 25px;
-  color: #999;
-}
-
-/* Estiliza o botão da barra de pesquisa */
-.pesquisaFaq button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
+.paragrafoFaq{
+  text-align: center;
   padding: 5px;
 }
 
-/* Estiliza o ícone de pesquisa dentro do elemento com a classe iconePesquisa */
-.pesquisaFaq .iconePesquisa {
-  width: 20px;
-  height: auto;
-}
-
-.pesquisaFaq button::before {
-  font-weight: 900;
-  font-size: 16px;
-  color: #333;
+.tituloFaq{
+  text-align: center;
+  font-weight: 300;
 }
 
 /* Estilizando o contêiner da FAQ */
@@ -439,10 +403,6 @@ button.botao__1:active {
   padding: 5px;
 }
 
-.campoPesquisaFaq {
-  color: black;
-}
-
 /* Responsividade da página */
 @media (max-width: 768px) {
   body.faq {
@@ -455,8 +415,10 @@ button.botao__1:active {
     /* Maior largura para telas pequenas */
   }
 
-  .pesquisa {
-    width: 100%;
-    /* A barra de pesquisa ocupa toda a largura em telas pequenas */
+  .paragrafoFaq {
+    font-size: 1em; /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 10px; /* Reduz o padding */
+    line-height: 1.4; /* Ajusta a altura da linha */
+    text-align: justify; /* Justifica o texto para melhor aparência */
   }
 }
