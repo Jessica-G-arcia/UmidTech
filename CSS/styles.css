@@ -328,12 +328,12 @@ button.botao__1:active {
   margin: 3px;
 }
 
-.paragrafoFaq{
+.paragrafoFaq {
   text-align: center;
   padding: 5px;
 }
 
-.tituloFaq{
+.tituloFaq {
   text-align: center;
   font-weight: 300;
 }
@@ -416,9 +416,119 @@ button.botao__1:active {
   }
 
   .paragrafoFaq {
-    font-size: 1em; /* Reduz o tamanho da fonte em telas pequenas */
-    padding: 10px; /* Reduz o padding */
-    line-height: 1.4; /* Ajusta a altura da linha */
-    text-align: justify; /* Justifica o texto para melhor aparência */
+    font-size: 1em;
+    /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 10px;
+    /* Reduz o padding */
+    line-height: 1.4;
+    /* Ajusta a altura da linha */
+    text-align: justify;
+    /* Justifica o texto para melhor aparência */
   }
+}
+
+/* Estilização principal do rodapé */
+footer {
+  background-color: #023042;
+  color: #fff;
+  margin-top: auto;
+  padding: 4px 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Contêiner do rodapé */
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1200px;
+}
+
+/* Estiliza as colunas do rodapé */
+.colunasFooter{
+  flex: 1;
+  margin: 0 40px;
+}
+
+/* Estiliza o h3 dentro das colunas do rodapé */
+.colunasFooter h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estiliza a lista que está dentro do rodapé */
+.colunasFooter ul { 
+  list-style: none;
+  padding: 0;
+}
+
+/* Estiliza os itens da lista */
+.colunasFooter ul li {
+  margin-bottom: 8px;
+}
+
+/* Estiliza os links dentro dos itens da lista */
+.colunasFooter ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Estilização ao passar o mouse sobre os links */
+.colunasFooter ul li a:hover{
+  color: #fff;
+}
+
+/* Estiliza a imagem da logo no rodapé */
+.logoFooter img {
+  max-width: 140px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Aplica filtro para inverter as cores da imagem */
+}
+
+/* Estiliza os links das redes sociais no rodapé */
+.redesSociaisFooter a {
+  margin-right: 10px;
+}
+
+/* Estiliza os ícones das redes sociais */
+.redesSociaisFooter img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Estiliza o botão de contato no rodapé */
+.botaoContatoFooter {
+  margin-left: 20px;
+}
+
+/* Estiliza o botão de contato */
+.contatoBotao {
+  background-color: #ffb703;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Estilização ao passar o mouse sobre o botão de contato */
+.contatobotao :hover {
+  background-color: #d69a02;
+}
+
+/* Estiliza o rodapé final */
+.footerFinal {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+/* Estiliza o parágrafo no rodapé final */
+.footerFinal p {
+  font-size: 14px;
+  color: white;
 }
