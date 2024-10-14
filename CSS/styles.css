@@ -306,7 +306,6 @@ button.botao__1:active {
   }
 }
 
-}
 
 /* Estilização principal do rodapé */
 footer {
@@ -415,5 +414,122 @@ footer {
 
 }
 
+/* Estilo do body da página */
+.faq {
+  background-color: #f4f4f9;
+  font-family: "Inter", sans-serif;
+}
+
+/* Estiliza o h1 da página faq */
+.tituloPaginaFaq {
+  text-align: center;
+}
+
+/* Estiliza as sections */
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+}
+
+.paragrafoFaq {
+  text-align: center;
+  padding: 5px;
+}
+
+.tituloFaq {
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Estilizando o contêiner da FAQ */
+.containerFaq {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Estiliza as perguntas do faq */
+.containerFaq details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Estilo para o cabeçalho de cada pergunta */
+.containerFaq summary {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* Adicionando seja para expandir a pergunta  */
+.containerFaq summary::after {
+  content: "▼";
+  font-size: 12px;
+}
+
+/* Muda a seta quando o item estiver aberto */
+.containerFaq details[open] summary::after {
+  content: "▲";
+}
+
+/* Estiliza colocando uma cor quando o item estiver aberto */
+.containerFaq details[open] summary {
+  background-color: #e7e3e3;
+}
+
+/* Estiliza quando passa o mouse por cima */
+.containerFaq summary:hover {
+  background-color: #e7e3e3;
+}
+
+/* Estilo para o texto de resposta da FAQ */
+.containerFaq details p {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.textoFinalFaq {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsividade da página */
+@media (max-width: 768px) {
+  body.faq {
+    overflow-x: hidden;
+    /* Impede a rolagem lateral */
+  }
+
+  .faq-container {
+    width: 90%;
+    /* Maior largura para telas pequenas */
+  }
+
+  .paragrafoFaq {
+    font-size: 1em;
+    /* Reduz o tamanho da fonte em telas pequenas */
+    padding: 10px;
+    /* Reduz o padding */
+    line-height: 1.4;
+    /* Ajusta a altura da linha */
+    text-align: justify;
+    /* Justifica o texto para melhor aparência */
+  }
 }
 
