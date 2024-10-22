@@ -8,23 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="../JS/script.js"></script>
     <title>Sobre nós</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="../img/UT_logo_1-removebg-preview (2).png" width="110px" alt="logo da empresa">
+            <a href="../HTML/index.html"><img src="../img/UT_logo_1-removebg-preview (2).png" width="40%" alt="logo da empresa"></a>
         </div>
-        <div>
-            <nav class="menu inter_fonte">
-                <a href="../HTML/index.html">Home</a>
-                <a href="../HTML/sobre_nos.html">Sobre nós</a>
-                <a href="../HTML/produtos.html">Produtos</a>
-                <a href="../HTML/faq.html">FAQ</a>
-                <a href="../HTML/contato.html">Contato</a>
-                <a href="../HTML/orcamento.html"><input type="button" class="bt_orcamento" value="Solicitar orçamento"></a>
-              </nav>
+        <div class="hamburguer" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+        <nav class="menu">
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/sobre_nos.html">Sobre nós</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/faq.html">FAQ</a>
+            <a href="../HTML/contato.html">Contato</a>
+            <a class="bt_orcamento" href="../HTML/orcamento.html">Solicitar Orçamento</a>
+        </nav>
     </header>
     <hr>
 
@@ -54,7 +58,7 @@
                         
                     </div>
                     <div class="tras">
-                        <p>Uso de sensor para o monitoramento da umidade.<br><br> Uso de umidifcador para nivelar a umidade do ar dentro do veículo.</p>
+                        <p>Uso de sensor para o monitoramento da umidade.<br><br> Uso de sensor de presença para função ligar e desligar do umidificador.</p>
                     </div>
                 </div>
             </div>
@@ -68,7 +72,7 @@
                     </div>
         
                     <div class="tras">
-                        <p>Uso de sensor de presença.<br><br> O umidificador só liga se houver uma pessoa no interior do veículo.</p>
+                        <p>Devido ao uso do sensor de presença, o umidificador só liga se houver uma pessoa no interior do veículo.</p>
                     </div>
                 </div>
             </div>
@@ -95,11 +99,66 @@
                         </div>     
                     </div>
                     <div class="tras">
-                            <p>Os dados da umidade do ar e do nível de bateria ficam disponíveis para consulta 24 horas por dia.</p>
+                            <p>Dados disponíveis para consulta 24 horas por dia.</p>
+                            <div class="iframe-container">
+                                <iframe id="zoomedIframe"
+                                    src="https://embed.figma.com/proto/z0yAVByiUAAGnSgxFTaICS/UmidTech?node-id=149-4&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=149%3A2&starting-point-node-id=149%3A4&embed-host=share&hide-ui=1"
+                                    frameborder="0"
+                                    allowtransparency="true"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
+    <br><br>
+    <footer>
+        <div class="footerContainer">
+            <div class="logoFooter">
+                <img src="../img/UT_logo_1-removebg-preview (2).png" alt="logo da página">
+            </div>
+    
+            <div class="colunasFooter">
+                <h3>Início</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="orcamento.html">Solicitar Orçamento</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Sobre-nós</h3>
+                <ul>
+                    <li><a href="sobre_nos.html">Informações da Empresa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="colunasFooter">
+                <h3>Suportes</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Telefones</a></li>
+                    <li><a href="#">Chat</a></li>
+                </ul>
+            </div>
+            <div class="redesSociaisFooter">
+                <a href="#"><img src="../img/icon_instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/icone-linkedin.png" alt="Linkdedin"></a>
+                <a href="#"><img src="../img/icone_facebbok.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/icone-whatsapp.png" alt="whatsApp"></a>
+                <a href="#"><img src="../img/icone-gmail.png" alt="Gmail"></a>
+            </div>
+            <div class="botaoContatoFooter">
+                <a href="contato.html" class="contatoBotao">Contato</a>
+            </div>
+        </div>
+        <div class="footerFinal">
+            <p>© 2024 Copyright - UmidTech.</p>
+        </div>
+    </footer>
 </body>
 </html>
